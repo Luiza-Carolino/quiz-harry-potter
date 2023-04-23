@@ -1,0 +1,24 @@
+
+#label {
+  display: flex;
+  flex-direction: column;
+  margin: 10%;
+}
+
+#label .one {
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#label .two {
+  font-size: 15px;
+}
+
+#btn {
+  display: flex;
+  flex-direction: column;
+  margin: 10%;
+  font-size: 25px;
+  
+}

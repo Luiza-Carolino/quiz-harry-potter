@@ -1,0 +1,28 @@
+
+<ion-content [fullscreen]="true">
+
+<ion-item class="title" lines="none">
+<ion-label>{{perguntas}}º Question</ion-label>
+</ion-item>
+
+<div class="loading" *ngIf="!dados">
+  <ion-spinner name="crescent" color="danger"></ion-spinner>
+</div>
+
+<ion-label *ngIf="dados">
+
+  <div class="pergunta">
+  <h2>Spell: </h2>
+  <h1>{{random[respostaIndex].name}}</h1>
+  </div>
+
+  <ion-item class="respostas" *ngFor="let itens of random; let i = index" (click)="resposta(i)">
+  <ion-label class="ion-text-wrap">Option {{i + 1}}: {{ i === respostaIndex ? itens.description : itens}}</ion-label>
+  </ion-item>
+
+
+</ion-label>
+
+<!-- <ion-button (click)="getrandom()">aleatório</ion-button> -->
+
+</ion-content>

@@ -1,0 +1,43 @@
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+ion-item{
+    padding:5px
+}
+
+.respostas{
+    --background: none;
+    background: rgba(255, 0, 0, 0.263);
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.loading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pergunta{
+    border-radius: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+ion-content{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.title{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 8px;
+    --background: none;
+}
